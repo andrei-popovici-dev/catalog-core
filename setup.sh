@@ -15,3 +15,5 @@ test -d repos/apps/elfloader || git clone https://github.com/unikraft/app-elfloa
 test -d repos/libs/redis || git clone https://github.com/unikraft/lib-redis repos/libs/redis
 test -d repos/libs/wamr || git clone https://github.com/unikraft/lib-wamr repos/libs/wamr
 test -d repos/libs/sqlite || git clone https://github.com/unikraft/lib-sqlite repos/libs/sqlite
+test -d repos/libs/traefik || git clone https://github.com/andrei-popovici-dev/lib-traefik repos/libs/traefik
+test -d repos/libs/libgo || git clone https://github.com/RaduAndreiTudorica/lib-libgo.git repos/libs/libgo

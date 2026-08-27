@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if test ! -f "workdir/build/go-hello_qemu-x86_64.dbg"; then
+    echo "No debug file workdir/build/go-hello_qemu-x86_64." 1>&2
+    echo "Did you run ./build.qemu.x86_64 with right config?" 1>&2
+    exit 1
+fi
+
+gdb --eval-command="target remote :1234" workdir/build/go-hello_qemu-x86_64.dbg

@@ -1,0 +1,12 @@
+# Configure Go Hello application. Use C++ libraries.
+
+config APPGOHELLO
+bool "Configure Go Hello"
+default y
+
+	# Select C++ libraries.
+	select LIBCOMPILER_RT
+	select LIBUNWIND
+    select LIBGO
+	select LIBMUSL
+	select LWIP
